@@ -1,0 +1,16 @@
+{
+  "name": "expocad_site",
+  "version": "1.0.0",
+  "description": "the official website of Expocad",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Expocad",
+    "expo",
+    "floorplan"
+  ],
+  "author": "Jordon Buchanan",
+  "license": "ISC"
+}
