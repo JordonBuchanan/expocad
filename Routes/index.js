@@ -2,11 +2,11 @@ const express = require('express');
 const router = express.Router();
 const passport = require('passport');
 const Posts = require('../Models/Post');
-const User = require('../Models/User');
+const User = require('../Models/Admin');
 const Mongoose = require('mongoose');
 const moment = require('moment');
-const PassportFacebook = require('../Models/FacebookUser.js');
-const PassportTwitter = require('../Models/TwitterUser.js');
+//const PassportFacebook = require('../Models/FacebookUser.js');
+//const PassportTwitter = require('../Models/TwitterUser.js');
 
 //=================
 // GET Routes
@@ -44,7 +44,7 @@ router.get('/Benefits', (req, res, next) => {
 //POST Routes
 //================
 
-router.post("/News", upload.single('image'), function(req, res){
+/* router.post("/News", upload.single('image'), function(req, res){
   cloudinary.uploader.upload(req.file.path, function(result) {
   var name = req.body.name;
   var image = req.body.image = result.secure_url;
@@ -59,8 +59,8 @@ router.post("/News", upload.single('image'), function(req, res){
           res.redirect("/blog");
       }
   });
-});
-});
+}); */
+//});
 
 //================
 //PUT Routes
@@ -99,8 +99,7 @@ router.get('/login', function(req, res, next) {
 //================
 
 router.get("*", (req, res) => {
-    res.render("404.ejs")
+    res.render("404")
 });
-
 
 module.exports = router;

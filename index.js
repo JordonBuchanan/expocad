@@ -6,12 +6,14 @@ const express          = require("express"),
       multer           = require('multer'), 
       cloudinary       = require('cloudinary'),
       sass             = require('node-sass'),
-      passportFacebook = require('passport-facebook'),
+ //passportFacebook = require('passport-facebook'),
       mongoose         = require('mongoose'),
-      passportTwitter  = require('passport-twitter'),
       videoJs          = require('video.js'),
       nodemailer       = require('nodemailer'),
-      LocalStrategy    = require("passport-local");
+      LocalStrategy    = require("passport-local"),
+      ejs              = require('ejs'),
+      helmet           = require('helmet'),
+      cors             = require('cors');
 
 const indexRouter = require('./Routes/index');
 const Posts = require('./Models/Post');
@@ -32,10 +34,12 @@ resave: false,
 saveUninitialized: false
 }));
 //SECURITY
-app.use(passport.initialize(), (req, res, next) => {
+app.use(helmet())
+app.use(cors())
+/* app.use(passport.initialize(), (req, res, next) => {
     res.header("Acceess-Conttrol-AllowOrigin", "*");
     res.header("Access-Control-Allow-Headers", "Origin X-Requested-With, Content-Type, Accept");
-});
+}); */
 //HELMET
 //CORS
 
@@ -70,6 +74,6 @@ console.log('Unhandled Rejection at: Promise', p, 'reason:', reason);
 //LISTEN
 //================
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 5500;
 
 app.listen(port, () => console.log(`Server is running on port ${port}`));
