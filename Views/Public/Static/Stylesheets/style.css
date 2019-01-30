@@ -12,9 +12,12 @@ body {
     font-family: 'Roboto Condensed', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    height:100%;
-    background: #FAFAFA;
-    background-size: cover;
+    height:100vw;
+    background: url(../Images/expocadasset2.png);
+    background-size:fill;
+    background-position:bottom;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
     color: #1B1A28 !important;
     text-align:center;
 }
@@ -44,18 +47,91 @@ a{
     background:none;
     text-align: center;
 }
+.navbar-brand{
+    font-size:12px;
+    text-align:left;
+    padding-left:10px;
+}
 .expocadLogo{
     color: red;
+}
+#brandLogo{
+    font-family: 'Major Mono Display', monospace;
+    font-size:20px;
+    padding-left: 0 !important;
 }
 .btn{
     border-radius: 10px !important;
     background: #c11327;
     font-weight:700;
 }
-#homeSubHero h6{
-    text-transform: uppercase;
+#homeHero3{
+    text-align:center;
 }
-#homeSubHero hr{
-    width:50px;
-    border-bottom: 1px solid #1B1A28;
+#homeHero3 h2:nth-of-type(1){
+    padding-top:65px;
+}
+#homeHero3 h2:nth-of-type(2){
+    font-weight:700;
+    padding-left:5px;
+    padding-bottom:15px;
+}
+#homeHero3 p{
+    font-size:20px;
+    padding:0 75px 75px;
+}
+.productDiv{
+    height:220px;
+    width:220px;
+    background:white;
+    margin:0 auto;
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,.14);
+    transition: 0.3s;
+}
+.productDiv i{
+    font-size: 35px;
+    padding:20px 0 10px;
+    color:rgba(193, 19, 39,0.7);
+}
+#FXIcon{
+    font-size: 35px;
+    padding:10px 0 10px;
+    color:rgba(193, 19, 39,0.7);
+    margin-bottom:0;
+    font-weight:700;
+    font-family: 'Major Mono Display', monospace;
+}
+.productDiv:hover{
+    transform:scale(1.2);
+    transition:0.3s;
+}
+#footer{
+    border-top:2px solid #c11327;
+    background: radial-gradient( rgba(0,0,0, 0.55),rgba(0,0,0, 0.55)), url(../Images/expocadasset2.png);
+    background-position: inherit;
+    background-size:cover;
+    height:250px;
+    padding:35px 25px 0px;
+    color: white;
+    text-align:left;
+}
+#footer p{
+    font-size:16px;
+}
+#subFooter{
+ background: rgba(0,0,0,0.8);
+ text-align:center;
+ padding:15px 10px 5px;
+ color: white;
+}
+#subFooterTitle{
+    font-family: 'Major Mono Display', monospace;
+}
+#footer a{
+    color: white !important;
+
+}
+#footer i{
+    padding: 0 5px;
+    font-size:30px;
 }
