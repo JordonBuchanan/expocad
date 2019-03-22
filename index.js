@@ -59,16 +59,16 @@ app.use('/', indexRouter);
 
 //Mongoose Configuration
 //DB COnfig
-const db = require('./config/keys').mongoURI;
-mongoose
-.connect(db)
-.catch(error => console.log(error))
-.then(() => console.log('MongoDB connected'));
-mongoose.set('debug', true);
-process.on('unhandledRejection', (reason, p) => {
-console.log('Unhandled Rejection at: Promise', p, 'reason:', reason);
+//const db = require('./config/keys').mongoURI;
+//mongoose
+//.connect(db)
+//.catch(error => console.log(error))
+//.then(() => console.log('MongoDB connected'));
+//mongoose.set('debug', true);
+//process.on('unhandledRejection', (reason, p) => {
+//console.log('Unhandled Rejection at: Promise', p, 'reason:', reason);
 // application specific logging, throwing an error, or other logic here
-}); 
+//});  
 
 //================
 //LISTEN

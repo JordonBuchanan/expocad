@@ -4,6 +4,7 @@
   "description": "the official website of Expocad",
   "main": "index.js",
   "scripts": {
+    "start": "index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-css": "node-sass-chokidar src/ -o src/",
     "watch-css": "npm run build-css && node-sass-chokidar Views/Public/Static/Stylesheets/ -o   Views/Public/Static/Stylesheets/ --watch --recursive"

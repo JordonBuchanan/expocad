@@ -12,9 +12,9 @@ body {
     font-family: 'Roboto Condensed', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    height:100vw;
+    height:100vh;
     background: url(../Images/expocadasset2.png);
-    background-size:fill;
+    background-size:cover;
     background-position:bottom;
     background-repeat: no-repeat;
     background-attachment:fixed;
@@ -36,6 +36,12 @@ a{
     background-size:cover;
     background-position: bottom;
     color: #FAFAFA;
+}
+#heroBtn{
+    background: #c11327;
+    width: 300px;
+    padding-top: 13.5px;
+    height: 50px;
 }
 #subHeroTitle{
     font-weight:700;
@@ -61,8 +67,7 @@ a{
     padding-left: 0 !important;
 }
 .btn{
-    border-radius: 10px !important;
-    background: #c11327;
+    border-radius: 0px !important;
     font-weight:700;
 }
 #homeHero3{
@@ -87,6 +92,7 @@ a{
     margin:0 auto;
     box-shadow: 0 1px 4px 0 rgba(0,0,0,.14);
     transition: 0.3s;
+    cursor:pointer;
 }
 .productDiv i{
     font-size: 35px;
@@ -134,4 +140,22 @@ a{
 #footer i{
     padding: 0 5px;
     font-size:30px;
+}
+/********************PRODUCTS****************************************/
+#productHero{
+    background: linear-gradient(35deg, rgba(255,0,0, 0.65),rgba(0,0,0, 0.65)), url(../Images/FXBG.jpg);
+    background-size:cover;
+        background-position:center;
+    height:100vh;
+    color:white;
+    padding:15px;
+}
+#productHero h2{
+    margin-top:20px;
+    font-weight:300;
+    text-transform:uppercase;
+    letter-spacing: 1.5px;
+}
+#productHero h2:nth-of-type(2){
+    font-size:56px;
 }
