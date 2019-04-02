@@ -54,7 +54,7 @@ a{
     background:none;
     text-align: center;
 }
-#homeHero .lead{
+#homeHero .lead:nth-of-type(1){
     margin-top: 125px;
 }
 #homeHero h1{
