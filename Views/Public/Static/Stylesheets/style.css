@@ -36,6 +36,7 @@ a{
     background-size:cover;
     background-position: bottom;
     color: #FAFAFA;
+    height: 700px
 }
 #heroBtn{
     background: #c11327;
@@ -52,6 +53,12 @@ a{
 #homeHero{
     background:none;
     text-align: center;
+}
+#homeHero .lead{
+    margin-top: 125px;
+}
+#homeHero h1{
+    font-size:5vw;
 }
 .navbar-brand{
     font-size:12px;
@@ -86,21 +93,25 @@ a{
     padding:0 75px 75px;
 }
 .productDiv{
-    height:220px;
-    width:220px;
+    height:400px;
+    width:400px;
     background:white;
     margin:0 auto;
     box-shadow: 0 1px 4px 0 rgba(0,0,0,.14);
     transition: 0.3s;
     cursor:pointer;
+    padding:25px;
+}
+.productDiv p{
+    font-size:20px;
 }
 .productDiv i{
-    font-size: 35px;
+    font-size: 60px;
     padding:20px 0 10px;
     color:rgba(193, 19, 39,0.7);
 }
 #FXIcon{
-    font-size: 35px;
+    font-size: 60px;
     padding:10px 0 10px;
     color:rgba(193, 19, 39,0.7);
     margin-bottom:0;
