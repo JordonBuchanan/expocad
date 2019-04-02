@@ -3,7 +3,6 @@ const router = express.Router();
 const passport = require('passport');
 const Posts = require('../Models/Post');
 const User = require('../Models/Admin');
-const Mongoose = require('mongoose');
 const moment = require('moment');
 //const PassportFacebook = require('../Models/FacebookUser.js');
 //const PassportTwitter = require('../Models/TwitterUser.js');
